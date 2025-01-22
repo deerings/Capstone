@@ -1,6 +1,7 @@
 # dsc288r_capstone_project
-UCSD Master of Data Science DSC388R - Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights - Winter 2024<br>
+UCSD Master of Data Science DSC288R - Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights - Winter 2024<br>
 Sneha Shah (sns002@ucsd.edu), Sean Deering (sdeering@ucsd.edu), Mengkong Aun (maun@ucsd.edu)
+# Abstract
 
 # Background
 The rapid growth of rental platforms like Airbnb has significantly impacted housing markets worldwide, raising concerns about affordability and urban dynamics. Data science techniques such as ML can facilitate data-driven exploration of the extent of these impacts.<br>
@@ -29,3 +30,4 @@ Model performance will be evaluated using standard regression metrics including 
 [3] Wang, H. (2023). Predicting Airbnb Listing Price with Different models. Highlights in Science Engineering and Technology, 47, 79–86. https://doi.org/10.54097/hset.v47i.8169
 [4] Inside Airbnb. (2024). Get the Data. Insideairbnb.com. https://insideairbnb.com/get-the-data/
 
+## UNDER CONSTRUCTION!
