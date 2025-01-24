@@ -4,7 +4,7 @@ DATASET=joebeachcapital/airbnb
 NOTEBOOKS_FOLDER=notebooks
 SRC_FOLDER=src
 TESTS_FOLDER=tests
-KAGGLE_CONFIG=~/.kaggle/kaggle.json
+KAGGLE_CONFIG=/.kaggle/kaggle.json
 
 # default target
 all: setup setup-kaggle data pipeline test clean
@@ -24,8 +24,8 @@ setup-kaggle:
 		echo "Your Kaggle API key was not found! Follow these steps to set it up:"; \
 		echo "1. Login to your Kaggle account (or create an account (if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
-		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/"; \
-		echo "4. Run: chmod 600 ~/.kaggle/kaggle.json in your terminal."; \
+		echo "3. Save the downloaded 'kaggle.json' file to /.kaggle/"; \
+		echo "4. Run: chmod 600 /.kaggle/kaggle.json in your terminal."; \
 		exit 1; \
 	else \
 		echo "Kaggle API key found at $(KAGGLE_CONFIG)."; \
