@@ -21,7 +21,6 @@ setup:
 # setup the Kaggle API
 setup-kaggle:
 	@if [ ! -f $(KAGGLE_CONFIG) ]; then \
-		echo "Your Kaggle API key was not found! Follow these steps to set it up:"; \
 		echo "1. Login to your Kaggle account (or create an account (if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
 		echo "3. Save the downloaded 'kaggle.json' file to /.kaggle/"; \
