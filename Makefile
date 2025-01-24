@@ -25,11 +25,7 @@ setup-kaggle:
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
 		echo "3. Save the downloaded 'kaggle.json' file to /.kaggle/"; \
 		echo "4. Run: chmod 600 /.kaggle/kaggle.json in your terminal."; \
-		exit 1; \
-	else \
-		echo "Kaggle API key found at $(KAGGLE_CONFIG)."; \
-	fi
-
+		
 # download data from Kaggle
 .PHONY: data
 data:
