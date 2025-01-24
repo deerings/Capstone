@@ -21,16 +21,11 @@ setup:
 # setup the Kaggle API
 setup-kaggle:
 	@if [ ! -f $(KAGGLE_CONFIG) ]; then \
-		echo "Your Kaggle API key was not found! Follow these steps to set it up:"; \
 		echo "1. Login to your Kaggle account (or create an account (if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
 		echo "3. Save the downloaded 'kaggle.json' file to /.kaggle/"; \
 		echo "4. Run: chmod 600 /.kaggle/kaggle.json in your terminal."; \
-		exit 1; \
-	else \
-		echo "Kaggle API key found at $(KAGGLE_CONFIG)."; \
-	fi
-
+		
 # download data from Kaggle
 .PHONY: data
 data:
@@ -62,9 +57,10 @@ clean:
 # help target to display valid commands
 help:
 	@echo "Available targets:"
-	@echo "  setup     - Install dependencies"
-	@echo "  data      - Download dataset from Kaggle"
-	@echo "  pipeline  - Run the data pipeline"
-	@echo "  test      - Run tests"
-	@echo "  clean     - Remove generated files"
-	@echo "  help      - Show this help message"
+	@echo "  setup        - Install dependencies"
+	@echo "  setup-kaggle - Setup the Kaggle API"
+	@echo "  data         - Download dataset from Kaggle"
+	@echo "  pipeline     - Run the data pipeline"
+	@echo "  test         - Run tests"
+	@echo "  clean        - Remove generated files"
+	@echo "  help         - Show this help message"
