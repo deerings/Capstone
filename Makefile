@@ -62,9 +62,10 @@ clean:
 # help target to display valid commands
 help:
 	@echo "Available targets:"
-	@echo "  setup     - Install dependencies"
-	@echo "  data      - Download dataset from Kaggle"
-	@echo "  pipeline  - Run the data pipeline"
-	@echo "  test      - Run tests"
-	@echo "  clean     - Remove generated files"
-	@echo "  help      - Show this help message"
+	@echo "  setup        - Install dependencies"
+	@echo "  setup-kaggle - Setup the Kaggle API"
+	@echo "  data         - Download dataset from Kaggle"
+	@echo "  pipeline     - Run the data pipeline"
+	@echo "  test         - Run tests"
+	@echo "  clean        - Remove generated files"
+	@echo "  help         - Show this help message"
