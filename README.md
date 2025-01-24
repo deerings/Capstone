@@ -25,10 +25,10 @@ Model performance will be evaluated using standard regression metrics including 
 
 # References
 
-[1] dima806. (2023, September 20). Airbnb global price predict AutoViz+CatBoost+SHAP. Kaggle.com; Kaggle. https://www.kaggle.com/code/dima806/airbnb-global-price-predict-autoviz-catboost-shap
-[2] Predictive Price Modeling for Airbnb listings. (n.d.). Www.deepakkarkala.com. https://www.deepakkarkala.com/docs/articles/machine_learning/airbnb_price_modeling/about/index.html
-[3] Wang, H. (2023). Predicting Airbnb Listing Price with Different models. Highlights in Science Engineering and Technology, 47, 79–86. https://doi.org/10.54097/hset.v47i.8169
-[4] Inside Airbnb. (2024). Get the Data. Insideairbnb.com. https://insideairbnb.com/get-the-data/
+[1] dima806. (2023, September 20). Airbnb global price predict AutoViz+CatBoost+SHAP. Kaggle.com; Kaggle. https://www.kaggle.com/code/dima806/airbnb-global-price-predict-autoviz-catboost-shap<br>
+[2] Predictive Price Modeling for Airbnb listings. (n.d.). Www.deepakkarkala.com. https://www.deepakkarkala.com/docs/articles/machine_learning/airbnb_price_modeling/about/index.html<br>
+[3] Wang, H. (2023). Predicting Airbnb Listing Price with Different models. Highlights in Science Engineering and Technology, 47, 79–86. https://doi.org/10.54097/hset.v47i.8169<br>
+[4] Inside Airbnb. (2024). Get the Data. Insideairbnb.com. https://insideairbnb.com/get-the-data/<br>
 
 # Data Dictionary
 
