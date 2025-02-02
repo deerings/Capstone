@@ -15,8 +15,9 @@ setup:
 	python3 -m venv .venv
 	.venv/bin/pip install --upgrade pip
 	.venv/bin/pip install -r requirements.txt
-	source .venv/bin/activate
 	@echo "environment setup complete!"
+	@echo "To activate the virtual environment, run: source .venv/bin/activate"
+	@echo "To deactivate the virtual environment, run: deactivate"
 
 # setup the Kaggle API
 setup-kaggle:
