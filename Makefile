@@ -14,8 +14,8 @@ setup:
 	@echo "setting up environment..."
 	python3 -m venv .venv
 	.venv/bin/pip install --upgrade pip
-#	.venv/bin/pip install -r requirements.txt ## will wrap everything in a requirements.txt file eventually, testing for now.
-	.venv/bin/pip install kaggle
+	.venv/bin/pip install -r requirements.txt
+	source .venv/bin/activate
 	@echo "environment setup complete!"
 
 # setup the Kaggle API
