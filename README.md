@@ -36,7 +36,7 @@ Model performance will be evaluated using standard regression metrics including 
 
 2) Open a terminal from the main folder of the repository and type 'make setup' to setup a virtual Python environment and install required dependencies.
 
-3) from the terminal, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key.
+3) from the terminal, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save it to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work.
 
 4) After you've successfully completed Step 3, run 'make data'. This will pull the AirBNB dataset from Kaggle via the API and extract it into the /data folder.
 
