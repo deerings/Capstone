@@ -14,9 +14,10 @@ setup:
 	@echo "setting up environment..."
 	python3 -m venv .venv
 	.venv/bin/pip install --upgrade pip
-#	.venv/bin/pip install -r requirements.txt ## will wrap everything in a requirements.txt file eventually, testing for now.
-	.venv/bin/pip install kaggle
+	.venv/bin/pip install -r requirements.txt
 	@echo "environment setup complete!"
+	@echo "To activate the virtual environment, run: source .venv/bin/activate"
+	@echo "To deactivate the virtual environment, run: deactivate"
 
 # setup the Kaggle API
 setup-kaggle:
@@ -35,6 +36,12 @@ data:
 	rm -f $(DATA_FOLDER)/*.zip
 	@echo "Data download complete."
 
+#clean the data
+clean-data:
+	@echo "Cleaning the data..."
+	python3 src/clean_data.py
+	@echo "Data cleaned and added to the data folder."
+
 # run the data pipeline
 pipeline:
 	@echo "Starting the data pipeline..."
@@ -48,7 +55,7 @@ test:
 	@echo "tests complete."
 
 # clean generated files
-clean:
+cleanup:
 	@echo "Cleaning up..."
 	rm -rf $(DATA_FOLDER)/*
 	find . -name "__pycache__" -type d -exec rm -r {} +
@@ -60,7 +67,8 @@ help:
 	@echo "  setup        - Install dependencies"
 	@echo "  setup-kaggle - Setup the Kaggle API"
 	@echo "  data         - Download dataset from Kaggle"
+	@echo "  clean-data   - Clean the data"
 	@echo "  pipeline     - Run the data pipeline"
 	@echo "  test         - Run tests"
-	@echo "  clean        - Remove generated files"
+	@echo "  cleanup        - Remove generated files"
 	@echo "  help         - Show this help message"
