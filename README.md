@@ -9,7 +9,7 @@
 - Mengkong Aun ([maun@ucsd.edu](mailto:maun@ucsd.edu))
 
 
-## Abstract
+# Abstract
 
 ## 🌍 Background
 The rapid growth of rental platforms like Airbnb has significantly impacted housing markets worldwide, raising concerns about affordability and urban dynamics. Data science techniques such as ML can facilitate data-driven exploration of the extent of these impacts.<br>
