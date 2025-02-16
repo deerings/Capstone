@@ -1,48 +1,70 @@
-# DSC288R Capstone Project
-UCSD Master of Data Science DSC288R - Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights - Winter 2024<br>
-Sneha Shah (sns002@ucsd.edu), Sean Deering (sdeering@ucsd.edu), Mengkong Aun (maun@ucsd.edu)
-# Abstract
+# 🌐 DSC288R Capstone Project
 
-# Background
+***UCSD Master of Data Science DSC288R***<br>
+**Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights - Winter 2024**
+
+👥 **Team Members**:  
+- Sneha Shah ([sns002@ucsd.edu](mailto:sns002@ucsd.edu))  
+- Sean Deering ([sdeering@ucsd.edu](mailto:sdeering@ucsd.edu))  
+- Mengkong Aun ([maun@ucsd.edu](mailto:maun@ucsd.edu))
+
+
+## Abstract
+
+## 🌍 Background
 The rapid growth of rental platforms like Airbnb has significantly impacted housing markets worldwide, raising concerns about affordability and urban dynamics. Data science techniques such as ML can facilitate data-driven exploration of the extent of these impacts.<br>
 
-# Problem Definition
+## 🎯 Problem Definition
 This project will predict Airbnb listing prices globally using ML regression models. Input consists of property characteristics, pricing, availability, reviews, host details, and geospatial data. Output will consist of price predictions, comparative analysis of model performance, and feature importance.<br>
-# Motivation
+
+## 💡 Motivation
 The problem is well-suited for machine learning due to the dataset's richness, incorporating numerical, categorical, and textual features. The global scope introduces variance and complexity that warrants use of ML models capable of capturing regional variations.<br>
 
-# Literature Review
+## 🔮 Literature Review
 Previous approaches include use of AutoViz, CatBoost and SHAP[1] for global price prediction, development of web-based tools for host pricing assistance[2], and regional analyses focused on specific markets like Boston[3]. Our project differentiates itself by implementing multiple ML regression models on a global scale to evaluate their effectiveness in handling regional differences.
 
-# Approach
+## ⚙️ Approach
 We will implement Linear, Random Forest, Gradient Boosting, and K-Nearest Neighbors Regression. This approach will allow us to compare performance across different models and examine how each handle complex nonlinear relationships in the data. These models should complement each other well: Linear Regression will provide an interpretable baseline, Random Forest and Gradient Boosting will capture relationships between features, and KNN will capture local pricing patterns and neighborhood effects.<br>
 
-# Dataset and Algorithm Details
-The project will utilize Airbnb data sourced from Kaggle containing 89 features across nearly 500,000 listings. If necessary, we will supplement the dataset with data from Inside Airbnb[4] or data augmentation. Given the complex nature of Airbnb pricing data and its non-linear relationships, we anticipate Gradient Boosting Regression to demonstrate superior performance, followed by Random Forest Regression.
+## 🗂️ Dataset and Algorithm Details
+The project will utilize Airbnb data sourced from Kaggle containing 89 features across nearly 500,000 listings, and appear to have been sourced from Inside Airbnb[4]. Given the complex nature of Airbnb pricing data and its non-linear relationships, we anticipate Gradient Boosting Regression to demonstrate superior performance, followed by Random Forest Regression.
 
-# Success Criteria
-Model performance will be evaluated using standard regression metrics including Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and cross-validation across different geographical regions. Feature importance analysis will validate the models' ability to capture key pricing factors.<br>
+## 🧬 Success Criteria
+Model performance will be evaluated using standard regression metrics including Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and cross-validation across different geographical regions. Feature importance analysis will inform the models' ability to capture key pricing factors.<br>
 
-# References
+## 📚 References
+1. dima806. (2023, September 20). *Airbnb global price predict AutoViz+CatBoost+SHAP*. Kaggle. [Link](https://www.kaggle.com/code/dima806/airbnb-global-price-predict-autoviz-catboost-shap)
+2. *Predictive Price Modeling for Airbnb listings*. [Link](https://www.deepakkarkala.com/docs/articles/machine_learning/airbnb_price_modeling/about/index.html)
+3. Wang, H. (2023). *Predicting Airbnb Listing Price with Different Models*. [DOI](https://doi.org/10.54097/hset.v47i.8169)
+4. Inside Airbnb. (2024). *Get the Data*. [Link](https://insideairbnb.com/get-the-data/)
 
-[1] dima806. (2023, September 20). Airbnb global price predict AutoViz+CatBoost+SHAP. Kaggle.com; Kaggle. https://www.kaggle.com/code/dima806/airbnb-global-price-predict-autoviz-catboost-shap<br>
-[2] Predictive Price Modeling for Airbnb listings. (n.d.). Www.deepakkarkala.com. https://www.deepakkarkala.com/docs/articles/machine_learning/airbnb_price_modeling/about/index.html<br>
-[3] Wang, H. (2023). Predicting Airbnb Listing Price with Different models. Highlights in Science Engineering and Technology, 47, 79–86. https://doi.org/10.54097/hset.v47i.8169<br>
-[4] Inside Airbnb. (2024). Get the Data. Insideairbnb.com. https://insideairbnb.com/get-the-data/<br>
 
-# Getting Started
+## 🚀 Getting Started
 
-1) Clone this repository.
+1) **Clone this repository:**
+   ```bash
+   git clone https://github.com/deerings/Capstone.git
+   cd Capstone
 
-2) Open a terminal from the main folder of the repository and type 'make setup' to setup a virtual Python environment and install required dependencies.
+2) From the root directory of the repository, run 'make setup' to setup a virtual Python environment and install required dependencies.
+   ```bash
+   make setup
+   
 
-3) from the terminal, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save it to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work.
+3) Next, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save your key 'kaggle.json' to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work.
+   ```bash
+   make setup-kaggle
 
 4) After you've successfully completed Step 3, run 'make data'. This will pull the AirBNB dataset from Kaggle via the API and extract it into the /data folder.
+   ```bash
+   make data
 
-5) open the 'Capstone Code.ipynb' file found in /notebooks. This contains the code to run EDA, EDA summary and Feature Engineering.
+6) open the 'Capstone Code.ipynb' file found in /notebooks. This contains the code to run EDA, EDA summary, and Feature Engineering.
 
-6) You can also export the cleaned data to the /data folder by running 'make clean-data'.
+7) If you want to go straight to modeling, You can also export the cleaned data to the /data folder by running 'make clean-data'.
+   ```bash
+   make clean-data
 
-7) running 'make cleanup' will remove all of the files generated by the code in this repository.
-
+8) running 'make cleanup' will remove all of the files generated by the code in this repository.
+   ```bash
+   make cleanup
