@@ -59,9 +59,9 @@ Model performance will be evaluated using standard regression metrics including 
    ```bash
    make data
 
-6) open the 'Capstone Code.ipynb' file found in /notebooks. This contains the code to run EDA, EDA summary, and Feature Engineering.
+6) open the '01 Data_Cleaning_EDA.ipynb' file found in /notebooks. This contains the code to run Data Cleaning, EDA, and Feature Engineering.
 
-7) If you want to go straight to modeling, You can also export the cleaned data to the /data folder by running 'make clean-data'.
+7) Export the cleaned data to the /data folder by running 'make clean-data'. This runs a separate .py script that is based on the '01 Data_Cleaning_EDA.ipynb' file. 
    ```bash
    make clean-data
 
