@@ -1,6 +1,4 @@
 # 🌐 DSC288R Capstone Project - Winter 2024
-
-***UCSD Master of Data Science***<br>
 **Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights**
 
 👥 **Team Members**:  
