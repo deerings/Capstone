@@ -41,7 +41,7 @@ Model performance will be evaluated using standard regression metrics including 
 
 ## 🚀 Getting Started
 
-1) **Clone this repository:**
+1) **Clone this repository and cd into it:**
    ```bash
    git clone https://github.com/deerings/Capstone.git
    cd Capstone
