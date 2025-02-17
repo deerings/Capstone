@@ -1,7 +1,7 @@
-# 🌐 DSC288R Capstone Project
+# 🌐 DSC288R Capstone Project - Winter 2024
 
 ***UCSD Master of Data Science DSC288R***<br>
-**Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights - Winter 2024**
+**Project Group 01: Airbnb Price Prediction: Leveraging Machine Learning for Global Insights**
 
 👥 **Team Members**:  
 - Sneha Shah ([sns002@ucsd.edu](mailto:sns002@ucsd.edu))  
