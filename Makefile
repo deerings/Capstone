@@ -22,10 +22,11 @@ setup:
 # setup the Kaggle API
 setup-kaggle:
 	@if [ ! -f $(KAGGLE_CONFIG) ]; then \
-		echo "1. Login to your Kaggle account (or create an account (if needed)."; \
+		echo "1. Login to your Kaggle account (or create an account if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
-		echo "3. Save the downloaded 'kaggle.json' file to /.kaggle/"; \
-		echo "4. Run: chmod 600 /.kaggle/kaggle.json in your terminal."; \
+		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/"; \
+		echo "4. Run: chmod 600 ~/.kaggle/kaggle.json in your terminal."; \
+	fi
 		
 # download data from Kaggle
 .PHONY: data
