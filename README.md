@@ -49,9 +49,9 @@ Model performance will be evaluated using standard regression metrics including 
    make setup
 3) Type '.venv/bin/activate' to activate the virtual environment.
    ```bash
-   .venv/bin/activate
+   source .venv/bin/activate
 
-4) Next, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save your key 'kaggle.json' to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work.
+4) Next, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save your key 'kaggle.json' to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work. Alternatively, you can download the data directly from [kaggle](https://www.kaggle.com/datasets/joebeachcapital/airbnb/data) and save it to the /data folder of the repo.
    ```bash
    make setup-kaggle
 
