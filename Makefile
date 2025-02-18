@@ -40,8 +40,15 @@ data:
 #clean the data
 clean-data:
 	@echo "Cleaning the data..."
-	python3 src/clean_data.py
+	.venv/bin/python3 src/clean_data.py
 	@echo "Data cleaned and added to the data folder."
+
+#run the models
+.PHONY: models
+models:
+	@echo "Running the models..."
+	.venv/bin/python3 src/models.py
+	@echo "Models have been successfully run."
 
 # run the data pipeline
 pipeline:
@@ -69,7 +76,8 @@ help:
 	@echo "  setup-kaggle - Setup the Kaggle API"
 	@echo "  data         - Download dataset from Kaggle"
 	@echo "  clean-data   - Clean the data"
+	@echo "  models       - Run the models"
 	@echo "  pipeline     - Run the data pipeline"
 	@echo "  test         - Run tests"
-	@echo "  cleanup        - Remove generated files"
+	@echo "  cleanup      - Remove generated files"
 	@echo "  help         - Show this help message"
