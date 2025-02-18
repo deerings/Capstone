@@ -44,10 +44,10 @@ Model performance will be evaluated using standard regression metrics including 
    git clone https://github.com/deerings/Capstone.git
    cd Capstone
 
-2) From the root directory of the repository, run 'make setup' to setup a virtual Python environment and install required dependencies.
+2) From the root directory of the repository, run 'make setup' to setup a virtual Python environment and install required dependencies. Type '.venv/bin/activate to activate the virtual environment.
    ```bash
    make setup
-   
+   .venv/bin/activate
 
 3) Next, run 'make setup-kaggle' and follow the directions to obtain your Kaggle API key. Make sure to save your key 'kaggle.json' to the '/Capstone/.kaggle/' folder, otherwise step 4 will not work.
    ```bash
