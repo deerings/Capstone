@@ -24,7 +24,7 @@ setup-kaggle:
 	@if [ ! -f $(KAGGLE_CONFIG) ]; then \
 		echo "1. Login to your Kaggle account (or create an account if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
-		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/"; \
+		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/ (you can create this folder by typing mkdir .kaggle from the repository"; \
 		echo "4. Run: chmod 600 ~/.kaggle/kaggle.json in your terminal."; \
 	fi
 		

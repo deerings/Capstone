@@ -114,6 +114,6 @@ df['Last Review'] = df['Last Review'].fillna("2016-01-01")
 #df['Geolocation'] = df['Geolocation'].fillna("0, 0")
 
 # confirm that all missing values have been successfully imputed
-print(df.isnull().sum().sum())
+#print(df.isnull().sum().sum())
 
 df.to_csv('data/airbnb-listings_cleaned.csv', index=False)
