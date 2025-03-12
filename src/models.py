@@ -87,7 +87,31 @@ X_train_val, X_test, y_train_val, y_test = train_test_split(X, y, test_size=0.10
 
 
 X_train, X_val, y_train, y_val = train_test_split(X_train_val, y_train_val, test_size=0.1111, random_state=42)
+#####
+# Convert test set to DataFrames and export
+# For X_test (features)
+X_test_df = pd.DataFrame(X_test, columns=X.columns if hasattr(X, 'columns') else None)
+# For y_test (target)
+y_test_df = pd.DataFrame(y_test, columns=['target'] if y_test.ndim == 1 else None)
+# Combine features and target for test set
+test_df = pd.concat([X_test_df, y_test_df], axis=1)
+# Export test set
+test_df.to_csv('./data/test_set.csv', index=False)
 
+# Convert validation set to DataFrames and export
+X_val_df = pd.DataFrame(X_val, columns=X.columns if hasattr(X, 'columns') else None)
+y_val_df = pd.DataFrame(y_val, columns=['target'] if y_val.ndim == 1 else None)
+val_df = pd.concat([X_val_df, y_val_df], axis=1)
+val_df.to_csv('./data/validation_set.csv', index=False)
+
+# Convert training set to DataFrames and export
+X_train_df = pd.DataFrame(X_train, columns=X.columns if hasattr(X, 'columns') else None)
+y_train_df = pd.DataFrame(y_train, columns=['target'] if y_train.ndim == 1 else None)
+train_df = pd.concat([X_train_df, y_train_df], axis=1)
+train_df.to_csv('./data/training_set.csv', index=False)
+
+print("All datasets have been exported to the ./data directory.")
+####
 
 # #### Linear Regression Model Application and Evaluation
 
