@@ -24,7 +24,7 @@ setup-kaggle:
 	@if [ ! -f $(KAGGLE_CONFIG) ]; then \
 		echo "1. Login to your Kaggle account (or create an account if needed)."; \
 		echo "2. Go to 'Settings > Account' > 'API' -> 'Create New Token'."; \
-		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/ (you can create this folder by typing mkdir .kaggle from the repository"; \
+		echo "3. Save the downloaded 'kaggle.json' file to ~/.kaggle/ (you can create this folder by typing mkdir .kaggle from the repository)"; \
 		echo "4. Run: chmod 600 ~/.kaggle/kaggle.json in your terminal."; \
 	fi
 		
@@ -51,9 +51,7 @@ models:
 	@echo "Models have been successfully run."
 
 # run the data pipeline
-pipeline:
-	@echo "Starting the data pipeline..."
-	jupyter nbconvert --to notebook --execute $(NOTEBOOKS_FOLDER)/data_pipeline.ipynb --output $(NOTEBOOKS_FOLDER)/data_pipeline_output.ipynb
+.PHONY pipeline: data clean-data models
 	@echo "the data pipeline has been executed."
 
 # run tests
